@@ -5,6 +5,8 @@ body {
   width: 200px; }
 #vusal i {
   color: #999999; }
+#vusal a {
+  text-decoration: none; }
 #vusal .container {
   width: 1150px;
   margin-top: 20px; }
@@ -140,6 +142,8 @@ body {
       height: 34px;
       line-height: 33px;
       padding-left: 10px; }
+      #vusal .container .schedule span a {
+        color: #908A8A; }
       #vusal .container .schedule span i {
         position: absolute;
         font-size: 1.5; }
@@ -164,6 +168,8 @@ body {
     height: 34px;
     line-height: 33px;
     padding-left: 10px; }
+    #vusal .container .scheduleBottom a {
+      color: #908A8A; }
     #vusal .container .scheduleBottom i {
       font-size: 170%;
       font-weight: 800;
