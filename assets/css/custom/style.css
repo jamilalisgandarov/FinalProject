@@ -7,7 +7,9 @@ body {
   color: #999999; }
 #vusal .container {
   width: 1150px;
-  margin-top: 70px; }
+  margin-top: 20px; }
+  #vusal .container:first-child {
+    margin-top: 40px; }
   #vusal .container .col-lg-3 {
     width: 225px; }
     #vusal .container .col-lg-3 .boxes {
