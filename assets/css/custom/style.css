@@ -69,7 +69,9 @@ body {
         top: 261px;
         left: 0px;
         border-top: 1px solid #D9D9D9;
+        border-radius: 0 0 3px 3px;
         width: 100%;
+        height: 29px;
         background-color: #F6F6F6; }
         #vusal .container .col-lg-3 .boxes .bottom i {
           font-size: 13px;
@@ -80,7 +82,8 @@ body {
           #vusal .container .col-lg-3 .boxes .bottom i:last-child {
             padding: 7px;
             border-left: 1px solid #D9D9D9;
-            margin-left: 55px; }
+            position: absolute;
+            right: 5px; }
   #vusal .container .line {
     width: 1px;
     height: 500px;
