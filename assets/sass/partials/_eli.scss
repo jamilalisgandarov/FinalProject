@@ -4,10 +4,11 @@ body {
 
 #header {
 	height: 58px;
-	background: gray;
+	background: #131418;
 	padding: 0px 25px;
-
-
+	position: fixed;
+	width: 100%;
+	z-index: 2;
 	.logo,.navigation,  .navigation ul li, .search, .rightBar, .search, .profileLogo {
 		display: inline-block;
 	}
@@ -17,42 +18,202 @@ body {
 			margin: 0;
 			line-height: 58px;
 			font-size: 25px;
-
+			color: white;
 		}
 	}// end .logo
 	
 	.navigation {
+		color: #A4A4A4;
+		
 		ul {
-			li {
+			.menuListItem {
+				position: relative;
+				top: -5px;
+				padding: 0px 15px;
+				font-size: 15px;
+				cursor: hand;
+				&:hover {
+					background: lighten(#131418, 20%);
+				}
+				.menuItem {
+					position: relative;
+					top: 5px;
+					line-height: 58px;
+					color: #A4A4A4;
+					height: 58px;
+					&:hover {
+						text-decoration: none;
+						background: lighten(#131418, 20%);
+					}
+				}
+			}
+			.addWork {
+				width: 110px;
+				height: 20px;
+				border-radius: 2px;
+				margin-left: 20px;
+				background: linear-gradient(#008FFF, #0064FF);
+				&:hover {
+					background: linear-gradient(darken(#008FFF, 10%), darken(#0064FF, 10%));
+				}
 				a {
-					color: #2b2b2b;
+					color: white;
+					&:hover {
+						text-decoration: none;
+					}
 				}
 			}
 		}
 	}
 
 	.rightBar {
-		color: #2b2b2b;
-		.search {
+		.profileLogo:hover {
+			.profileMenu {
+				display: block;
+			}
+		}
+		color: #A4A4A4;
+		float: right;
+		line-height: 58px;
 
+		.search {
+			i {
+				font-size: 16px;
+				margin-right: 20px;
+			}
 		}
 		.profileLogo {
 			img {
 				height: 26px;
 				width: 26px;
 			}
+			i {
+				font-size: 16px;
+				margin-left: 10px;
+			}
+		}
+
+		.profileMenu {
+			display: none;
+			position: fixed;
+			right: 15px;
+			z-index: 10;
+			background: #2b2b2b;
+			width: 185px;
+			&, ul, li, a {
+				padding: 0;
+				margin: 0;
+			}
+			ul {
+				padding: 5px 0;
+				li {
+					padding-left: 20px;
+					height: 25px;
+					margin-bottom: 5px;
+					line-height: 25px;
+					list-style-type: none;
+					&:hover {
+						background: #0078FF;
+					}
+					a {
+						color: white;
+						font-size: 13px;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					
+				}
+			}
 		}
 	}
 	
 }
 
+#collapseMenu {
+	height: 58px;
+	background: #131418;
+	padding: 0px 25px;
+	position: fixed;
+	width: 100%;
+	color: white;
+	line-height: 58px;
+	font-size: 30px;
+	z-index: 2;
+
+	.icon, .logo, .search {
+		display: inline-block;
+	}
+
+	.icon a, .logo a, .search a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.icon {
+		margin-left: 11px;
+
+
+	}
+
+	.logo {
+		h1 {
+			padding: 0;
+			margin: 0;
+			font-size: 30px;
+		}
+		margin-left: 50px;
+	}
+
+	.search {
+		float: right;
+		margin-right: 11px;
+	}
+
+	.sidebar {
+		background: #1F1F1F;
+		position: relative;
+		left: -25px;
+		width: 255px;
+		transform: translate(-255px, 0);
+		ul {
+			padding-left: 5px;
+			a {
+				color: #A4A4A4;
+				font-size: 15px;
+				&:hover {
+					text-decoration: none;
+				}
+
+				li {
+					list-style-type: none;
+					height: 50px;
+					width: 250px;
+					padding-left: 30px;
+					&:hover {
+						background: #2B2B2B;
+						color: white;
+					}
+				}
+				.active {
+					background: #2B2B2B;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
 #activity{
-	padding-top: 55px;
+	padding-top: 113px;
 	.wrapper {
 		.my_container {
 			position: relative;
 			width: 100%;
 			.thumbWrapper{
+				z-index: 1;
 				margin: 0 auto;
 				.thumb {
 					height: 230px;
@@ -212,8 +373,6 @@ body {
 		}
 	}
 }	
-
-
 
 .noShow {
 	visibility: hidden;

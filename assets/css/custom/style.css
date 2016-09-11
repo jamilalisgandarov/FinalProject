@@ -3,28 +3,149 @@ body {
 
 #header {
   height: 58px;
-  background: gray;
-  padding: 0px 25px; }
+  background: #131418;
+  padding: 0px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
   #header .logo, #header .navigation, #header .navigation ul li, #header .search, #header .rightBar, #header .search, #header .profileLogo {
     display: inline-block; }
   #header .logo h1 {
     margin: 0;
     line-height: 58px;
-    font-size: 25px; }
-  #header .navigation ul li a {
-    color: #2b2b2b; }
+    font-size: 25px;
+    color: white; }
+  #header .navigation {
+    color: #A4A4A4; }
+    #header .navigation ul .menuListItem {
+      position: relative;
+      top: -5px;
+      padding: 0px 15px;
+      font-size: 15px;
+      cursor: hand; }
+      #header .navigation ul .menuListItem:hover {
+        background: #404351; }
+      #header .navigation ul .menuListItem .menuItem {
+        position: relative;
+        top: 5px;
+        line-height: 58px;
+        color: #A4A4A4;
+        height: 58px; }
+        #header .navigation ul .menuListItem .menuItem:hover {
+          text-decoration: none;
+          background: #404351; }
+    #header .navigation ul .addWork {
+      width: 110px;
+      height: 20px;
+      border-radius: 2px;
+      margin-left: 20px;
+      background: linear-gradient(#008FFF, #0064FF); }
+      #header .navigation ul .addWork:hover {
+        background: linear-gradient(#0072cc, #0050cc); }
+      #header .navigation ul .addWork a {
+        color: white; }
+        #header .navigation ul .addWork a:hover {
+          text-decoration: none; }
   #header .rightBar {
-    color: #2b2b2b; }
+    color: #A4A4A4;
+    float: right;
+    line-height: 58px; }
+    #header .rightBar .profileLogo:hover .profileMenu {
+      display: block; }
+    #header .rightBar .search i {
+      font-size: 16px;
+      margin-right: 20px; }
     #header .rightBar .profileLogo img {
       height: 26px;
       width: 26px; }
+    #header .rightBar .profileLogo i {
+      font-size: 16px;
+      margin-left: 10px; }
+    #header .rightBar .profileMenu {
+      display: none;
+      position: fixed;
+      right: 15px;
+      z-index: 10;
+      background: #2b2b2b;
+      width: 185px; }
+      #header .rightBar .profileMenu, #header .rightBar .profileMenu ul, #header .rightBar .profileMenu li, #header .rightBar .profileMenu a {
+        padding: 0;
+        margin: 0; }
+      #header .rightBar .profileMenu ul {
+        padding: 5px 0; }
+        #header .rightBar .profileMenu ul li {
+          padding-left: 20px;
+          height: 25px;
+          margin-bottom: 5px;
+          line-height: 25px;
+          list-style-type: none; }
+          #header .rightBar .profileMenu ul li:hover {
+            background: #0078FF; }
+          #header .rightBar .profileMenu ul li a {
+            color: white;
+            font-size: 13px; }
+            #header .rightBar .profileMenu ul li a:hover {
+              text-decoration: none; }
+
+#collapseMenu {
+  height: 58px;
+  background: #131418;
+  padding: 0px 25px;
+  position: fixed;
+  width: 100%;
+  color: white;
+  line-height: 58px;
+  font-size: 30px;
+  z-index: 2; }
+  #collapseMenu .icon, #collapseMenu .logo, #collapseMenu .search {
+    display: inline-block; }
+  #collapseMenu .icon a, #collapseMenu .logo a, #collapseMenu .search a {
+    color: inherit; }
+    #collapseMenu .icon a:hover, #collapseMenu .logo a:hover, #collapseMenu .search a:hover {
+      text-decoration: none; }
+  #collapseMenu .icon {
+    margin-left: 11px; }
+  #collapseMenu .logo {
+    margin-left: 50px; }
+    #collapseMenu .logo h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 30px; }
+  #collapseMenu .search {
+    float: right;
+    margin-right: 11px; }
+  #collapseMenu .sidebar {
+    background: #1F1F1F;
+    position: relative;
+    left: -25px;
+    width: 255px;
+    transform: translate(-255px, 0); }
+    #collapseMenu .sidebar ul {
+      padding-left: 5px; }
+      #collapseMenu .sidebar ul a {
+        color: #A4A4A4;
+        font-size: 15px; }
+        #collapseMenu .sidebar ul a:hover {
+          text-decoration: none; }
+        #collapseMenu .sidebar ul a li {
+          list-style-type: none;
+          height: 50px;
+          width: 250px;
+          padding-left: 30px; }
+          #collapseMenu .sidebar ul a li:hover {
+            background: #2B2B2B;
+            color: white; }
+        #collapseMenu .sidebar ul a .active {
+          background: #2B2B2B;
+          color: white; }
 
 #activity {
-  padding-top: 55px; }
+  padding-top: 113px; }
   #activity .wrapper .my_container {
     position: relative;
     width: 100%; }
     #activity .wrapper .my_container .thumbWrapper {
+      z-index: 1;
       margin: 0 auto; }
       #activity .wrapper .my_container .thumbWrapper .thumb {
         height: 230px;

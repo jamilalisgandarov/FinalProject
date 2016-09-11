@@ -1,48 +1,22 @@
 /* GIVING RESPONSIVITY FOR PANELS */
 var panelWidth = $('.thumb').width() + 10 * 2; //.thumb width + 10 * 2 for margins
 
-function FixPanelSizes() {
-	//getting number of panels in one row
-	numbOfPanels = ChooseNumberOfPanels();
-
-	//calculate width of row
-	thumbWrapper = numbOfPanels * panelWidth;
-	$('.thumbWrapper').css('width', thumbWrapper + 'px');
-}
-
-function ChooseNumberOfPanels() {
-	var windowWidth = $(window).width();
-	if (windowWidth >= 1720) {
-		return 7;
-	} else if (windowWidth >= 1480) {
-		return 6;
-	} else if (windowWidth >= 1260) {
-		return 5;
-	} else if (windowWidth >= 900) {
-		return 4;
-	} else if (windowWidth >= 700) {
-		return 3;
-	} else if (windowWidth >= 580) {
-		return 2;
-	} else {
-		return 1;
-	}
-}
-
 FixPanelSizes();
+HideSideBar();
 
 $(window).resize(function(){
 	FixPanelSizes();
+	HideSideBar();
 });
 
 /* *************************************************************************** */
 
 //Changing text of thumbType on hover
 $('.thumbType a').mouseenter(function(){
-	$('.thumbType a').text('View Gallery');
+	$(this).text('View Gallery');
 })
 $('.thumbType a').mouseleave(function(){
-	$('.thumbType a').text('Motion');
+	$(this).text('Motion');
 })
 
 /* *************************************************************************** */
@@ -93,5 +67,72 @@ if ($(window).width() > 1005) {
 	})
 }
 
+/* *************************************************************************** */
+//SETTING HEIGHT OF SIDEBAR EQUAL TO WINDOW HEIGHT
+$('.sidebar').css({
+	height: $(window).height() + 'px'
+})
 
 
+//PUTTING SIDEBAR ON LEFT
+var barClicked = false;
+$('.fa-bars').on('click', function(){
+	if (!barClicked) {
+		$('.sidebar').css({
+			transform: 'translate(0, 0)',
+			transition: 'all 0.4s ease'
+		})
+		barClicked = true;
+		$('body').css('overflow', 'hidden');
+	}
+	else {
+		$('.sidebar').css({
+			transform: 'translate(-255px, 0)',
+			transition: 'all 0.4s ease'
+		})
+		barClicked = false;
+		$('body').css('overflow', 'visible');
+	}
+})
+
+/* ************** FUNCTIONS ************** */
+
+//HIDE/SHOW SIDEBAR
+function HideSideBar() {
+	if($(window).width() < 1025) {
+		$('#header').addClass('hide');
+		$('#collapseMenu').removeClass('hide');
+	}
+	else {
+		$('#header').removeClass('hide');
+		$('#collapseMenu').addClass('hide');
+	}
+}
+
+function FixPanelSizes() {
+	//getting number of panels in one row
+	numbOfPanels = ChooseNumberOfPanels();
+
+	//calculate width of row
+	thumbWrapper = numbOfPanels * panelWidth;
+	$('.thumbWrapper').css('width', thumbWrapper + 'px');
+}
+
+function ChooseNumberOfPanels() {
+	var windowWidth = $(window).width();
+	if (windowWidth >= 1720) {
+		return 7;
+	} else if (windowWidth >= 1480) {
+		return 6;
+	} else if (windowWidth >= 1260) {
+		return 5;
+	} else if (windowWidth >= 900) {
+		return 4;
+	} else if (windowWidth >= 700) {
+		return 3;
+	} else if (windowWidth >= 580) {
+		return 2;
+	} else {
+		return 1;
+	}
+}
