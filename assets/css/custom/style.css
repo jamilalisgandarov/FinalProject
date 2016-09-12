@@ -1,3 +1,4 @@
+
 body {
   background: #F4F4F4; }
 
@@ -260,5 +261,203 @@ body {
 
 .clear {
   clear: both; }
+#teymur #header {
+  height: 58px;
+  background: black; }
+#teymur #profile {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 58px;
+  border-bottom: 1px solid #CFCFCF; }
+  #teymur #profile div {
+    padding-top: 10px; }
+    #teymur #profile div a {
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 13px;
+      color: black;
+      letter-spacing: 1px; }
+      #teymur #profile div a span {
+        padding-bottom: 19px;
+        border-bottom: 1px solid black; }
+#teymur #projects {
+  background: #F4F4F4;
+  height: auto; }
+  #teymur #projects .mycon {
+    padding-top: 32px;
+    padding-right: 284px;
+    padding-left: 284px; }
+    #teymur #projects .mycon .row {
+      margin-top: 25px; }
+      #teymur #projects .mycon .row .ed {
+        height: 30px;
+        width: 128px;
+        margin-right: auto; }
+        #teymur #projects .mycon .row .ed p {
+          color: #1769ff;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 24px;
+          white-space: nowrap; }
+      #teymur #projects .mycon .row .sh {
+        height: 30px;
+        width: 93px; }
+        #teymur #projects .mycon .row .sh p {
+          color: #1769ff;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 24px;
+          white-space: nowrap; }
+    #teymur #projects .mycon #down .row .left {
+      padding-left: 0px;
+      padding-right: 0px; }
+      #teymur #projects .mycon #down .row .left .one {
+        width: 100%;
+        background: #FAFAFA;
+        border: 1px solid #e8e8e8;
+        line-height: 19px;
+        padding: 18px 20px; }
+        #teymur #projects .mycon #down .row .left .one h1 {
+          font-size: 21px;
+          margin-top: 1px; }
+        #teymur #projects .mycon #down .row .left .one img {
+          width: 94px;
+          height: 94px;
+          margin-right: 0px;
+          margin-top: 5px;
+          margin-bottom: 25px; }
+      #teymur #projects .mycon #down .row .left .two {
+        width: 100%;
+        background: #FAFAFA;
+        border: 1px solid #e8e8e8;
+        line-height: 19px;
+        padding: 18px 20px; }
+        #teymur #projects .mycon #down .row .left .two ul {
+          padding-left: 0px; }
+          #teymur #projects .mycon #down .row .left .two ul li {
+            list-style-type: none;
+            color: lightgrey; }
+            #teymur #projects .mycon #down .row .left .two ul li p {
+              color: black;
+              padding-left: 30px;
+              font-weight: bold;
+              font-family: helvetica;
+              font-size: 11px;
+              display: inline-block; }
+      #teymur #projects .mycon #down .row .left .three, #teymur #projects .mycon #down .row .left .four, #teymur #projects .mycon #down .row .left .fifth {
+        width: 100%;
+        background: #FAFAFA;
+        border: 1px solid #e8e8e8;
+        line-height: 19px;
+        padding: 18px 20px; }
+        #teymur #projects .mycon #down .row .left .three h1, #teymur #projects .mycon #down .row .left .four h1, #teymur #projects .mycon #down .row .left .fifth h1 {
+          font-family: helvetica;
+          font-size: 10px; }
+    #teymur #projects .mycon #down .row .right {
+      padding-left: 0px;
+      padding-right: 0px; }
+      #teymur #projects .mycon #down .row .right .proje {
+        height: 54px;
+        background: white;
+        border: 1px solid #e8e8e8;
+        clear: left;
+        line-height: 19px; }
+        #teymur #projects .mycon #down .row .right .proje h1 {
+          font-size: 20px;
+          margin-top: 15px; }
+          #teymur #projects .mycon #down .row .right .proje h1 span {
+            padding-bottom: 15px;
+            border-bottom: 2px solid black; }
+      #teymur #projects .mycon #down .row .right .file {
+        height: 693px;
+        background: white;
+        border: 1px solid #e8e8e8;
+        clear: left;
+        line-height: 19px; }
+        #teymur #projects .mycon #down .row .right .file .upload {
+          border: 1px solid #E8E8E8;
+          border-radius: 5px;
+          margin-top: 170px; }
+          #teymur #projects .mycon #down .row .right .file .upload .icon {
+            margin-top: 20px;
+            color: #E9E9E9; }
+          #teymur #projects .mycon #down .row .right .file .upload h1 {
+            font-size: 25px;
+            color: #E9E9E9;
+            margin-bottom: 10px; }
+          #teymur #projects .mycon #down .row .right .file .upload label {
+            margin-top: 31px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            width: 130px;
+            height: 30px;
+            border: 1px solid black;
+            background: #008FFF;
+            background: -webkit-linear-gradient(#008FFF, #0064FF);
+            background: -o-linear-gradient(#008FFF, #0064FF);
+            background: -moz-linear-gradient(#008FFF, #0064FF);
+            background: linear-gradient(#008FFF, #0064FF); }
+            #teymur #projects .mycon #down .row .right .file .upload label i {
+              color: white;
+              padding-top: 7px;
+              padding-right: 20px; }
+            #teymur #projects .mycon #down .row .right .file .upload label p {
+              font-family: helvetica;
+              font-size: 13px;
+              font-weight: bold;
+              margin-left: 5px; }
+          #teymur #projects .mycon #down .row .right .file .upload input {
+            display: none; }
+
+@media only screen and (max-width: 700px) {
+  .left {
+    width: 100%; }
+
+  .mycon {
+    padding-right: 5% !important;
+    padding-left: 5% !important; }
+
+  .one {
+    width: 100% !important; }
+    .one h1 {
+      float: right;
+      padding-right: 40px;
+      padding-top: 30px; }
+
+  .two {
+    width: 100% !important; }
+
+  .three {
+    width: 100% !important; }
+
+  .four {
+    width: 100% !important; }
+
+  .fifth {
+    width: 100% !important; }
+
+  .proje {
+    width: 100% !important; }
+
+  .file {
+    width: 100% !important; } }
+@media only screen and (max-width: 1268px) {
+  .mycon {
+    padding-right: 5% !important;
+    padding-left: 5%  !important; }
+
+  .one {
+    width: 100%; }
+
+  .two {
+    width: 100%; }
+
+  .three {
+    width: 100%; }
+
+  .four {
+    width: 100%; }
+
+  .fifth {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
