@@ -1,0 +1,264 @@
+body {
+  background: #F4F4F4; }
+
+#header {
+  height: 58px;
+  background: #131418;
+  padding: 0px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+  #header .logo, #header .navigation, #header .navigation ul li, #header .search, #header .rightBar, #header .search, #header .profileLogo {
+    display: inline-block; }
+  #header .logo h1 {
+    margin: 0;
+    line-height: 58px;
+    font-size: 25px;
+    color: white; }
+  #header .navigation {
+    color: #A4A4A4; }
+    #header .navigation ul .menuListItem {
+      position: relative;
+      top: -5px;
+      padding: 0px 15px;
+      font-size: 15px;
+      cursor: hand; }
+      #header .navigation ul .menuListItem:hover {
+        background: #404351; }
+      #header .navigation ul .menuListItem .menuItem {
+        position: relative;
+        top: 5px;
+        line-height: 58px;
+        color: #A4A4A4;
+        height: 58px; }
+        #header .navigation ul .menuListItem .menuItem:hover {
+          text-decoration: none;
+          background: #404351; }
+    #header .navigation ul .addWork {
+      width: 110px;
+      height: 20px;
+      border-radius: 2px;
+      margin-left: 20px;
+      background: linear-gradient(#008FFF, #0064FF); }
+      #header .navigation ul .addWork:hover {
+        background: linear-gradient(#0072cc, #0050cc); }
+      #header .navigation ul .addWork a {
+        color: white; }
+        #header .navigation ul .addWork a:hover {
+          text-decoration: none; }
+  #header .rightBar {
+    color: #A4A4A4;
+    float: right;
+    line-height: 58px; }
+    #header .rightBar .profileLogo:hover .profileMenu {
+      display: block; }
+    #header .rightBar .search i {
+      font-size: 16px;
+      margin-right: 20px; }
+    #header .rightBar .profileLogo img {
+      height: 26px;
+      width: 26px; }
+    #header .rightBar .profileLogo i {
+      font-size: 16px;
+      margin-left: 10px; }
+    #header .rightBar .profileMenu {
+      display: none;
+      position: fixed;
+      right: 15px;
+      z-index: 10;
+      background: #2b2b2b;
+      width: 185px; }
+      #header .rightBar .profileMenu, #header .rightBar .profileMenu ul, #header .rightBar .profileMenu li, #header .rightBar .profileMenu a {
+        padding: 0;
+        margin: 0; }
+      #header .rightBar .profileMenu ul {
+        padding: 5px 0; }
+        #header .rightBar .profileMenu ul li {
+          padding-left: 20px;
+          height: 25px;
+          margin-bottom: 5px;
+          line-height: 25px;
+          list-style-type: none; }
+          #header .rightBar .profileMenu ul li:hover {
+            background: #0078FF; }
+          #header .rightBar .profileMenu ul li a {
+            color: white;
+            font-size: 13px; }
+            #header .rightBar .profileMenu ul li a:hover {
+              text-decoration: none; }
+
+#collapseMenu {
+  height: 58px;
+  background: #131418;
+  padding: 0px 25px;
+  position: fixed;
+  width: 100%;
+  color: white;
+  line-height: 58px;
+  font-size: 30px;
+  z-index: 2; }
+  #collapseMenu .icon, #collapseMenu .logo, #collapseMenu .search {
+    display: inline-block; }
+  #collapseMenu .icon a, #collapseMenu .logo a, #collapseMenu .search a {
+    color: inherit; }
+    #collapseMenu .icon a:hover, #collapseMenu .logo a:hover, #collapseMenu .search a:hover {
+      text-decoration: none; }
+  #collapseMenu .icon {
+    margin-left: 11px; }
+  #collapseMenu .logo {
+    margin-left: 50px; }
+    #collapseMenu .logo h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 30px; }
+  #collapseMenu .search {
+    float: right;
+    margin-right: 11px; }
+  #collapseMenu .sidebar {
+    background: #1F1F1F;
+    position: relative;
+    left: -25px;
+    width: 255px;
+    transform: translate(-255px, 0); }
+    #collapseMenu .sidebar ul {
+      padding-left: 5px; }
+      #collapseMenu .sidebar ul a {
+        color: #A4A4A4;
+        font-size: 15px; }
+        #collapseMenu .sidebar ul a:hover {
+          text-decoration: none; }
+        #collapseMenu .sidebar ul a li {
+          list-style-type: none;
+          height: 50px;
+          width: 250px;
+          padding-left: 30px; }
+          #collapseMenu .sidebar ul a li:hover {
+            background: #2B2B2B;
+            color: white; }
+        #collapseMenu .sidebar ul a .active {
+          background: #2B2B2B;
+          color: white; }
+
+#activity {
+  padding-top: 113px; }
+  #activity .wrapper .my_container {
+    position: relative;
+    width: 100%; }
+    #activity .wrapper .my_container .thumbWrapper {
+      z-index: 1;
+      margin: 0 auto; }
+      #activity .wrapper .my_container .thumbWrapper .thumb {
+        height: 230px;
+        width: 215px;
+        background: white;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        width: 215px;
+        box-shadow: 0 2px 5px lightgrey; }
+        #activity .wrapper .my_container .thumbWrapper .thumb .thumbImgWrapper {
+          margin: 5px; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .thumbImgWrapper .thumbImg {
+            width: 203px;
+            height: 160px; }
+            #activity .wrapper .my_container .thumbWrapper .thumb .thumbImgWrapper .thumbImg:hover {
+              opacity: 0.75; }
+        #activity .wrapper .my_container .thumbWrapper .thumb .row1 {
+          margin: 5px;
+          background: #F8F8F8;
+          height: 30px; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .row1 .thumbLogo img {
+            height: 30px;
+            width: auto;
+            margin-left: -15px; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .row1 .thumbType {
+            margin-left: -15px; }
+            #activity .wrapper .my_container .thumbWrapper .thumb .row1 .thumbType a {
+              line-height: 30px;
+              font-size: 11px;
+              text-indent: 6px;
+              float: left; }
+              #activity .wrapper .my_container .thumbWrapper .thumb .row1 .thumbType a:hover {
+                text-decoration: none;
+                color: blue; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .row1 .thumbStar {
+            color: #C4C4C4; }
+        #activity .wrapper .my_container .thumbWrapper .thumb .row2 {
+          color: #7d7d7d;
+          margin: 5px;
+          height: 16px;
+          font-size: 11px; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .row2 .thumbLikeIcon {
+            margin-left: -15px;
+            float: left; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .row2 .thumbLikeCount {
+            margin-left: -15px;
+            float: left; }
+          #activity .wrapper .my_container .thumbWrapper .thumb .row2 .thumbUserName {
+            float: right; }
+            #activity .wrapper .my_container .thumbWrapper .thumb .row2 .thumbUserName a:hover {
+              color: #171717;
+              text-decoration: none; }
+    #activity .wrapper .my_container .smallInfo {
+      height: 190px;
+      width: 355px;
+      border-radius: 5px;
+      background: white;
+      position: absolute;
+      padding: 10px;
+      box-shadow: 0 2px 5px lightgrey; }
+      #activity .wrapper .my_container .smallInfo .row1 {
+        height: 35px;
+        margin-bottom: 15px; }
+        #activity .wrapper .my_container .smallInfo .row1 div img, #activity .wrapper .my_container .smallInfo .row1 div .smallInfoName, #activity .wrapper .my_container .smallInfo .row1 div .smallInfoFollow {
+          float: left; }
+        #activity .wrapper .my_container .smallInfo .row1 div img {
+          width: 35px;
+          height: 35px; }
+        #activity .wrapper .my_container .smallInfo .row1 div .smallInfoName {
+          margin: 0px 10px; }
+          #activity .wrapper .my_container .smallInfo .row1 div .smallInfoName p {
+            margin-bottom: 0px; }
+          #activity .wrapper .my_container .smallInfo .row1 div .smallInfoName a {
+            color: #7d7d7d; }
+        #activity .wrapper .my_container .smallInfo .row1 div .smallInfoFollow {
+          width: 80px;
+          height: 25px;
+          border-radius: 5px;
+          border-color: #0055a7;
+          background: #008aea;
+          line-height: 25px;
+          text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+          font-size: 12px; }
+          #activity .wrapper .my_container .smallInfo .row1 div .smallInfoFollow i, #activity .wrapper .my_container .smallInfo .row1 div .smallInfoFollow a {
+            color: white; }
+      #activity .wrapper .my_container .smallInfo .row2 .smallImgWrapper {
+        margin: 0px auto;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 5px;
+        background: white;
+        box-shadow: 0 0 5px lightgray; }
+        #activity .wrapper .my_container .smallInfo .row2 .smallImgWrapper img {
+          width: 105px;
+          height: 85px;
+          justify-content: space-around; }
+      #activity .wrapper .my_container .smallInfo .row3 {
+        color: #adadad;
+        margin-top: 5px;
+        font-size: 14px; }
+        #activity .wrapper .my_container .smallInfo .row3 div {
+          display: inline-flex;
+          margin-right: 15px; }
+          #activity .wrapper .my_container .smallInfo .row3 div span {
+            position: relative;
+            top: -2px;
+            left: 5px; }
+
+.noShow {
+  visibility: hidden; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
