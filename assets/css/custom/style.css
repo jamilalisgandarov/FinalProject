@@ -52,9 +52,25 @@ body {
     line-height: 58px; }
     #header .rightBar .profileLogo:hover .profileMenu {
       display: block; }
-    #header .rightBar .search i {
-      font-size: 16px;
-      margin-right: 20px; }
+    #header .rightBar .search a {
+      color: #A4A4A4; }
+      #header .rightBar .search a:hover {
+        text-decoration: none; }
+      #header .rightBar .search a i {
+        font-size: 16px;
+        margin-right: 20px; }
+    #header .rightBar .search .searchExpanded {
+      padding: 0;
+      float: left;
+      margin-right: -20px; }
+      #header .rightBar .search .searchExpanded input {
+        height: 30px;
+        border-radius: 50px;
+        border: none;
+        padding-left: 30px; }
+      #header .rightBar .search .searchExpanded i {
+        position: relative;
+        right: -30px; }
     #header .rightBar .profileLogo img {
       height: 26px;
       width: 26px; }
@@ -114,6 +130,27 @@ body {
   #collapseMenu .search {
     float: right;
     margin-right: 11px; }
+    #collapseMenu .search a {
+      color: #A4A4A4; }
+      #collapseMenu .search a:hover {
+        text-decoration: none; }
+    #collapseMenu .search .searchExpandedSmall {
+      padding: 0;
+      float: left;
+      margin-right: -20px;
+      font-size: 20px; }
+      #collapseMenu .search .searchExpandedSmall input {
+        height: 30px;
+        width: 300px;
+        border-radius: 50px;
+        border: none;
+        padding-left: 30px;
+        color: #A4A4A4; }
+      #collapseMenu .search .searchExpandedSmall i {
+        position: relative;
+        right: -30px;
+        color: #A4A4A4;
+        font-size: 20px; }
   #collapseMenu .sidebar {
     background: #1F1F1F;
     position: relative;
@@ -257,6 +294,9 @@ body {
 
 .noShow {
   visibility: hidden; }
+
+.show {
+  visibility: visible; }
 
 .clear {
   clear: both; }
