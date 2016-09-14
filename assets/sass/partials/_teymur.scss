@@ -2,7 +2,8 @@
 
 
 #teymur{
-		  
+		 
+	background:#F4F4F4;
 	#header{
 		height: 58px;
 		background: black;
@@ -13,6 +14,7 @@
 		box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 		height: 58px;		
 		border-bottom: 1px solid #CFCFCF;
+		background: white;
 		div{
 			padding-top: 10px;
 
@@ -36,21 +38,29 @@
 		height: auto;
 
 			.mycon{
-				padding-top: 32px;
-				padding-right: 284px;
-				padding-left: 284px;
+			
 				.row{
 					margin-top: 25px;
-							.ed{
-								height: 30px;
-								width: 128px;
-								margin-right: auto;
-									p{
-										color: #1769ff;
-										font-size: 14px;
-										font-weight: bold;
-										line-height: 24px;
-										white-space: nowrap;
+					.ed{
+						height: 30px;
+						width: 128px;
+						margin-right: auto;
+						border-radius: 5px;
+						border:1px solid lightgrey;
+						background: -webkit-linear-gradient(#ffffff,#e8e8e8);
+						background: -o-linear-gradient(#ffffff,#e8e8e8); 
+						background: -moz-linear-gradient( #ffffff,#e8e8e8); 
+						background: linear-gradient(#ffffff,#e8e8e8); 
+						span{
+
+							padding-left: 6px;
+						}
+						p{
+							color: #1769ff;
+							font-size: 14px;
+							font-weight: bold;
+							line-height: 24px;
+							white-space: nowrap;
 											
 									
 		 					 
@@ -60,6 +70,19 @@
 						.sh{
 							height: 30px;
 							width: 93px;
+							border-radius: 5px;
+							border:1px solid lightgrey;
+							background: -webkit-linear-gradient(#ffffff,#e8e8e8);
+							background: -o-linear-gradient(#ffffff,#e8e8e8); 
+							background: -moz-linear-gradient( #ffffff,#e8e8e8); 
+							background: linear-gradient(#ffffff,#e8e8e8); 
+							i{
+								
+							}
+							span{
+
+								padding-left: 6px;
+							}
 							p{
 								color: #1769ff;
 								font-size: 14px;
@@ -164,9 +187,15 @@
 									border: 1px solid #E8E8E8;
 									border-radius: 5px;
 									margin-top: 170px;
-									.icon{
-										margin-top: 20px;
-										color: #E9E9E9;
+									&:hover{
+											border: 1px solid lightblue;
+									}
+									div{
+										margin-top: 50px;
+										.icon{
+											margin-top: 20px;
+											color: #E9E9E9;
+										}
 									}
 									h1{
 										font-size: 25px;
@@ -174,46 +203,85 @@
 										margin-bottom: 10px;
 
 									}
-										label{
-											margin-top: 31px;
-											margin-bottom: 20px;
-											border-radius: 3px;
-											width: 130px;
-											height: 30px;
-											border: 1px solid black;
-											background: #008FFF;
-											background: -webkit-linear-gradient( #008FFF, #0064FF);
-											background: -o-linear-gradient( #008FFF, #0064FF); 
-											background: -moz-linear-gradient( #008FFF, #0064FF); 
-											background: linear-gradient( #008FFF, #0064FF); 
-									
-											i{
+									input{
+										display: none;
+									}
+									label{
+										margin-top: 31px;
+										margin-bottom: 90px;
+										border-radius: 3px;
+										width: 130px;
+										height: 30px;
+										border: 1px solid black;
+										background: #008FFF;
+										background: -webkit-linear-gradient( #008FFF, #0064FF);
+										background: -o-linear-gradient( #008FFF, #0064FF); 
+										background: -moz-linear-gradient( #008FFF, #0064FF); 
+										background: linear-gradient( #008FFF, #0064FF); 
+										i{
+											color: white;
+											padding-top: 7px;
+											padding-right: 20px;
+											margin-left: 5px;
+											span{
 												color: white;
-												padding-top: 7px;
-												padding-right: 20px;
-											}
-											p{
 												font-family: helvetica;
 												font-size: 13px;
 												font-weight: bold;
-												margin-left: 5px;
+												padding-left: 5px;
 											}
 										}
-										input{
-											display: none;
-										}
 									}
-							}
+								}
+								// .upload{
+								// 	border: 1px solid #E8E8E8;
+								// 	border-radius: 5px;
+								// 	margin-top: 170px;
+								// 	.icon{
+								// 		margin-top: 20px;
+								// 		color: #E9E9E9;
+								// 	}
+								// 	h1{
+								// 		font-size: 25px;
+								// 		color: #E9E9E9;
+								// 		margin-bottom: 10px;
+
+								// 	}
+								// 		label{
+								// 			margin-top: 31px;
+								// 			margin-bottom: 20px;
+								// 			border-radius: 3px;
+								// 			width: 130px;
+								// 			height: 30px;
+								// 			border: 1px solid black;
+								// 			background: #008FFF;
+								// 			background: -webkit-linear-gradient( #008FFF, #0064FF);
+								// 			background: -o-linear-gradient( #008FFF, #0064FF); 
+								// 			background: -moz-linear-gradient( #008FFF, #0064FF); 
+								// 			background: linear-gradient( #008FFF, #0064FF); 
+									
+								// 			i{
+								// 				color: white;
+								// 				padding-top: 7px;
+								// 				padding-right: 20px;
+								// 			}
+								// 			p{
+								// 				font-family: helvetica;
+								// 				font-size: 13px;
+								// 				font-weight: bold;
+								// 				margin-left: 5px;
+								// 			}
+								// 		}
+								// 		input{
+								// 			display: none;
+								// }
+						  //   }
 						}
-
 					}
-
-			 }	
-
+				}
+			}	
 		}
-		
 	}
-
 }
 
 @media only screen and (max-width: 700px) {

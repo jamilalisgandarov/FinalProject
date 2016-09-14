@@ -482,6 +482,10 @@ body {
     clear: both;
 }
 
+#teymur {
+    background: #F4F4F4;
+}
+
 #teymur #header {
     height: 58px;
     background: black;
@@ -491,6 +495,7 @@ body {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     height: 58px;
     border-bottom: 1px solid #CFCFCF;
+    background: white;
 }
 
 #teymur #profile div {
@@ -515,12 +520,6 @@ body {
     height: auto;
 }
 
-#teymur #projects .mycon {
-    padding-top: 32px;
-    padding-right: 284px;
-    padding-left: 284px;
-}
-
 #teymur #projects .mycon .row {
     margin-top: 25px;
 }
@@ -529,6 +528,16 @@ body {
     height: 30px;
     width: 128px;
     margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#ffffff, #e8e8e8);
+}
+
+#teymur #projects .mycon .row .ed span {
+    padding-left: 6px;
 }
 
 #teymur #projects .mycon .row .ed p {
@@ -542,6 +551,16 @@ body {
 #teymur #projects .mycon .row .sh {
     height: 30px;
     width: 93px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#ffffff, #e8e8e8);
+}
+
+#teymur #projects .mycon .row .sh span {
+    padding-left: 6px;
 }
 
 #teymur #projects .mycon .row .sh p {
@@ -658,7 +677,15 @@ body {
     margin-top: 170px;
 }
 
-#teymur #projects .mycon #down .row .right .file .upload .icon {
+#teymur #projects .mycon #down .row .right .file .upload:hover {
+    border: 1px solid lightblue;
+}
+
+#teymur #projects .mycon #down .row .right .file .upload div {
+    margin-top: 50px;
+}
+
+#teymur #projects .mycon #down .row .right .file .upload div .icon {
     margin-top: 20px;
     color: #E9E9E9;
 }
@@ -669,9 +696,13 @@ body {
     margin-bottom: 10px;
 }
 
+#teymur #projects .mycon #down .row .right .file .upload input {
+    display: none;
+}
+
 #teymur #projects .mycon #down .row .right .file .upload label {
     margin-top: 31px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
     border-radius: 3px;
     width: 130px;
     height: 30px;
@@ -687,17 +718,15 @@ body {
     color: white;
     padding-top: 7px;
     padding-right: 20px;
-}
-
-#teymur #projects .mycon #down .row .right .file .upload label p {
-    font-family: helvetica;
-    font-size: 13px;
-    font-weight: bold;
     margin-left: 5px;
 }
 
-#teymur #projects .mycon #down .row .right .file .upload input {
-    display: none;
+#teymur #projects .mycon #down .row .right .file .upload label i span {
+    color: white;
+    font-family: helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 5px;
 }
 
 @media only screen and (max-width: 700px) {
