@@ -1,34 +1,41 @@
-#teymur #header {
-  height: 58px;
-  background: black; }
-#teymur #profile {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  height: 58px;
-  border-bottom: 1px solid #CFCFCF; }
-  #teymur #profile div {
-    padding-top: 10px; }
-    #teymur #profile div a {
-      margin-top: 10px;
-      text-decoration: none;
-      font-size: 13px;
-      color: black;
-      letter-spacing: 1px; }
-      #teymur #profile div a span {
-        padding-bottom: 19px;
-        border-bottom: 1px solid black; }
-#teymur #projects {
-  background: #F4F4F4;
-  height: auto; }
-  #teymur #projects .mycon {
-    padding-top: 32px;
-    padding-right: 284px;
-    padding-left: 284px; }
+#teymur {
+  background: #F4F4F4; }
+  #teymur #header {
+    height: 58px;
+    background: black; }
+  #teymur #profile {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 58px;
+    border-bottom: 1px solid #CFCFCF;
+    background: white; }
+    #teymur #profile div {
+      padding-top: 10px; }
+      #teymur #profile div a {
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        letter-spacing: 1px; }
+        #teymur #profile div a span {
+          padding-bottom: 19px;
+          border-bottom: 1px solid black; }
+  #teymur #projects {
+    background: #F4F4F4;
+    height: auto; }
     #teymur #projects .mycon .row {
       margin-top: 25px; }
       #teymur #projects .mycon .row .ed {
         height: 30px;
         width: 128px;
-        margin-right: auto; }
+        margin-right: auto;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+        background: -o-linear-gradient(#ffffff, #e8e8e8);
+        background: -moz-linear-gradient(#ffffff, #e8e8e8);
+        background: linear-gradient(#ffffff, #e8e8e8); }
+        #teymur #projects .mycon .row .ed span {
+          padding-left: 6px; }
         #teymur #projects .mycon .row .ed p {
           color: #1769ff;
           font-size: 14px;
@@ -37,7 +44,15 @@
           white-space: nowrap; }
       #teymur #projects .mycon .row .sh {
         height: 30px;
-        width: 93px; }
+        width: 93px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+        background: -o-linear-gradient(#ffffff, #e8e8e8);
+        background: -moz-linear-gradient(#ffffff, #e8e8e8);
+        background: linear-gradient(#ffffff, #e8e8e8); }
+        #teymur #projects .mycon .row .sh span {
+          padding-left: 6px; }
         #teymur #projects .mycon .row .sh p {
           color: #1769ff;
           font-size: 14px;
@@ -114,16 +129,22 @@
           border: 1px solid #E8E8E8;
           border-radius: 5px;
           margin-top: 170px; }
-          #teymur #projects .mycon #down .row .right .file .upload .icon {
-            margin-top: 20px;
-            color: #E9E9E9; }
+          #teymur #projects .mycon #down .row .right .file .upload:hover {
+            border: 1px solid lightblue; }
+          #teymur #projects .mycon #down .row .right .file .upload div {
+            margin-top: 50px; }
+            #teymur #projects .mycon #down .row .right .file .upload div .icon {
+              margin-top: 20px;
+              color: #E9E9E9; }
           #teymur #projects .mycon #down .row .right .file .upload h1 {
             font-size: 25px;
             color: #E9E9E9;
             margin-bottom: 10px; }
+          #teymur #projects .mycon #down .row .right .file .upload input {
+            display: none; }
           #teymur #projects .mycon #down .row .right .file .upload label {
             margin-top: 31px;
-            margin-bottom: 20px;
+            margin-bottom: 90px;
             border-radius: 3px;
             width: 130px;
             height: 30px;
@@ -136,14 +157,14 @@
             #teymur #projects .mycon #down .row .right .file .upload label i {
               color: white;
               padding-top: 7px;
-              padding-right: 20px; }
-            #teymur #projects .mycon #down .row .right .file .upload label p {
-              font-family: helvetica;
-              font-size: 13px;
-              font-weight: bold;
+              padding-right: 20px;
               margin-left: 5px; }
-          #teymur #projects .mycon #down .row .right .file .upload input {
-            display: none; }
+              #teymur #projects .mycon #down .row .right .file .upload label i span {
+                color: white;
+                font-family: helvetica;
+                font-size: 13px;
+                font-weight: bold;
+                padding-left: 5px; }
 
 @media only screen and (max-width: 700px) {
   .left {
