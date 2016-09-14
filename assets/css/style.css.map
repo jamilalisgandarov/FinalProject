@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,gBAAS;EACR,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK",
+"sources": ["../sass/partials/_vusal.scss"],
+"names": [],
+"file": "style.css"
+}
