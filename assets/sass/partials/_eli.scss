@@ -77,9 +77,31 @@ body {
 		line-height: 58px;
 
 		.search {
-			i {
-				font-size: 16px;
-				margin-right: 20px;
+			a {
+				color: #A4A4A4;
+				&:hover {
+					text-decoration: none;
+				}
+				i {
+					font-size: 16px;
+					margin-right: 20px;
+				}
+			}
+			.searchExpanded {
+				padding: 0;
+				float: left;
+				margin-right: -20px;
+				// visibility: hidden;
+				input {
+					height: 30px;
+					border-radius: 50px;
+					border: none;
+					padding-left: 30px;
+				}
+				i {
+					position: relative;
+					right: -30px;
+				}
 			}
 		}
 		.profileLogo {
@@ -170,6 +192,34 @@ body {
 	.search {
 		float: right;
 		margin-right: 11px;
+
+		a {
+			color: #A4A4A4;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.searchExpandedSmall {
+			padding: 0;
+			float: left;
+			margin-right: -20px;
+			font-size: 20px;
+			input {
+				height: 30px;
+				width: 300px;
+				border-radius: 50px;
+				border: none;
+				padding-left: 30px;
+				color: #A4A4A4;
+			}
+			i {
+				position: relative;
+				right: -30px;
+				color: #A4A4A4;
+				font-size: 20px;
+			}
+		}
 	}
 
 	.sidebar {
@@ -378,6 +428,11 @@ body {
 	visibility: hidden;
 }
 
+.show {
+	visibility: visible;
+}
+
 .clear {
 	clear: both;
 }
+
