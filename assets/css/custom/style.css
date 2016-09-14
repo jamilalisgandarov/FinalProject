@@ -1198,3 +1198,211 @@ body {
       position: absolute;
       right: 10px;
       top: 9px; }
+body {
+  background: #F4F4F4;
+  font-size: 14px; }
+
+#cavid #editorTop {
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 35px; }
+  #cavid #editorTop .editor {
+    background: #FFFFFF; }
+    #cavid #editorTop .editor ul {
+      padding-left: 30px;
+      margin: 0;
+      font-size: 1.285em;
+      display: inline-block; }
+      #cavid #editorTop .editor ul li {
+        font-weight: 700;
+        padding-bottom: 26px;
+        margin: 27.5px auto 1px;
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF; }
+        #cavid #editorTop .editor ul li:last-child {
+          border-right: 0; }
+        #cavid #editorTop .editor ul li a {
+          color: #959595;
+          text-decoration: none; }
+        #cavid #editorTop .editor ul li:hover {
+          border-bottom: 1px solid #1769ff; }
+          #cavid #editorTop .editor ul li:hover a {
+            color: #0064FF; }
+      #cavid #editorTop .editor ul div {
+        background: #d0d0d0;
+        width: 1px;
+        height: 16px;
+        display: inline-block;
+        margin: 0 15px;
+        margin-bottom: -3px; }
+      @media screen and (max-width: 863px) {
+        #cavid #editorTop .editor ul {
+          font-size: 1em; } }
+      @media screen and (max-width: 767px) {
+        #cavid #editorTop .editor ul {
+          padding-left: 0;
+          font-size: 0.9em; } }
+      @media screen and (max-width: 628px) {
+        #cavid #editorTop .editor ul {
+          font-size: 0.7em;
+          width: 100%; }
+          #cavid #editorTop .editor ul div {
+            display: none; }
+          #cavid #editorTop .editor ul li {
+            display: block;
+            margin: 15px auto 1px; } }
+    #cavid #editorTop .editor .right {
+      margin-top: 10px; }
+      #cavid #editorTop .editor .right .right-inner {
+        padding-right: 40px;
+        margin-top: 15px; }
+        #cavid #editorTop .editor .right .right-inner .btn1 {
+          background: #F4F4F4;
+          color: #444444;
+          border: 1px solid #d0d0d0;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 1em;
+          font-weight: bold;
+          height: 31px;
+          line-height: 29px;
+          padding: 0 15px; }
+        #cavid #editorTop .editor .right .right-inner div {
+          margin: 0 10px;
+          height: 16px;
+          width: 1px;
+          background: #d0d0d0;
+          display: inline-block; }
+        #cavid #editorTop .editor .right .right-inner .btn2 {
+          background: #0064FF;
+          border: 1px solid #0055a7;
+          color: #fff;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 1em;
+          font-weight: bold;
+          height: 31px;
+          line-height: 29px;
+          padding: 0 15px; }
+        #cavid #editorTop .editor .right .right-inner .btn3 {
+          background: #259E14;
+          border: 1px solid #1d8d0e;
+          color: #fff;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 1em;
+          font-weight: bold;
+          height: 31px;
+          line-height: 29px;
+          padding: 0 15px; }
+          #cavid #editorTop .editor .right .right-inner .btn3 i {
+            color: #ffffff; }
+        @media screen and (max-width: 863px) {
+          #cavid #editorTop .editor .right .right-inner {
+            font-size: 0.9em; } }
+        @media screen and (max-width: 767px) {
+          #cavid #editorTop .editor .right .right-inner {
+            padding-right: 0;
+            font-size: 0.8em; } }
+        @media screen and (max-width: 628px) {
+          #cavid #editorTop .editor .right .right-inner {
+            font-size: 0.7em; }
+            #cavid #editorTop .editor .right .right-inner div {
+              display: none; }
+            #cavid #editorTop .editor .right .right-inner .btn1, #cavid #editorTop .editor .right .right-inner .btn2, #cavid #editorTop .editor .right .right-inner .btn3 {
+              display: block;
+              width: 100px;
+              margin-bottom: 7px; } }
+#cavid #upload {
+  margin-left: 60px; }
+  #cavid #upload .media {
+    height: 241px;
+    background: #000000;
+    border-radius: 3px;
+    margin-right: 20px; }
+    #cavid #upload .media .mediainner {
+      height: 25px;
+      margin: 0 -15px; }
+      #cavid #upload .media .mediainner .so {
+        margin-top: -7px; }
+      #cavid #upload .media .mediainner h6 {
+        font-weight: 700;
+        font-size: 0.7em;
+        color: #959595;
+        margin: 0;
+        padding: 8px 0 0 13px; }
+      #cavid #upload .media .mediainner ul {
+        padding: 0;
+        margin-top: 7px;
+        list-style-type: none;
+        background: red; }
+        #cavid #upload .media .mediainner ul li {
+          font-size: 13px;
+          background: #1E1E1E;
+          padding: 14px 14px;
+          border-top: 1px solid #383838; }
+          #cavid #upload .media .mediainner ul li a {
+            color: #E2E1E1; }
+            #cavid #upload .media .mediainner ul li a:hover {
+              text-decoration: none; }
+          #cavid #upload .media .mediainner ul li i {
+            font-size: 1.2em; }
+          #cavid #upload .media .mediainner ul li:hover {
+            background: #2c2c2c; }
+  #cavid #upload .project {
+    border: 1px solid #E4E4E4;
+    background: #FFFFFF;
+    border-radius: 3px; }
+    #cavid #upload .project .projectname {
+      border-bottom: 1px solid #E4E4E4;
+      padding-top: 20px;
+      height: 135px;
+      font-size: 2em; }
+      #cavid #upload .project .projectname .name {
+        width: 245px; }
+        #cavid #upload .project .projectname .name:hover {
+          background: #E5E5E5; }
+          #cavid #upload .project .projectname .name:hover i {
+            color: #000000; }
+        #cavid #upload .project .projectname .name i {
+          color: #ffffff; }
+      #cavid #upload .project .projectname i {
+        font-size: 0.5em;
+        padding: 5px;
+        color: #696969; }
+        #cavid #upload .project .projectname i:first-child {
+          padding-top: 30px; }
+    #cavid #upload .project .fileupload {
+      height: 450px;
+      padding: 50px 40px; }
+      #cavid #upload .project .fileupload div {
+        height: 100%; }
+        #cavid #upload .project .fileupload div:hover {
+          border: 1px solid #0064FF;
+          cursor: pointer; }
+        #cavid #upload .project .fileupload div input {
+          display: none; }
+        #cavid #upload .project .fileupload div #upload-block {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 100px;
+          cursor: pointer;
+          padding-top: 130px; }
+          #cavid #upload .project .fileupload div #upload-block i {
+            font-size: 5em;
+            color: #cccccc; }
+          #cavid #upload .project .fileupload div #upload-block:hover i {
+            color: #333333; }
+  @media screen and (max-width: 767px) {
+    #cavid #upload .media {
+      margin-left: -20px;
+      margin-bottom: 20px; }
+    #cavid #upload .project {
+      margin-left: -20px; } }
+  @media screen and (max-width: 408px) {
+    #cavid #upload .project .projectname .name {
+      width: 100%;
+      font-size: 0.5em;
+      height: 40px; }
+    #cavid #upload .project .projectname i:first-child {
+      padding-top: 0; } }
