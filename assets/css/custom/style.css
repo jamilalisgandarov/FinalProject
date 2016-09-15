@@ -1,8 +1,5 @@
 #teymur {
   background: #F4F4F4; }
-  #teymur #header {
-    height: 58px;
-    background: black; }
   #teymur #profile {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     height: 58px;
@@ -68,6 +65,14 @@
         border: 1px solid #e8e8e8;
         line-height: 19px;
         padding: 18px 20px; }
+        #teymur #projects .mycon #down .row .left .one:hover {
+          opacity: 0.9; }
+          #teymur #projects .mycon #down .row .left .one:hover span a {
+            opacity: 1; }
+        #teymur #projects .mycon #down .row .left .one span {
+          padding-left: 240px; }
+          #teymur #projects .mycon #down .row .left .one span a {
+            opacity: 0; }
         #teymur #projects .mycon #down .row .left .one h1 {
           font-size: 21px;
           margin-top: 1px; }
@@ -101,6 +106,14 @@
         border: 1px solid #e8e8e8;
         line-height: 19px;
         padding: 18px 20px; }
+        #teymur #projects .mycon #down .row .left .three:hover, #teymur #projects .mycon #down .row .left .four:hover, #teymur #projects .mycon #down .row .left .fifth:hover {
+          opacity: 0.9; }
+          #teymur #projects .mycon #down .row .left .three:hover span a, #teymur #projects .mycon #down .row .left .four:hover span a, #teymur #projects .mycon #down .row .left .fifth:hover span a {
+            opacity: 1; }
+        #teymur #projects .mycon #down .row .left .three span, #teymur #projects .mycon #down .row .left .four span, #teymur #projects .mycon #down .row .left .fifth span {
+          padding-left: 240px; }
+          #teymur #projects .mycon #down .row .left .three span a, #teymur #projects .mycon #down .row .left .four span a, #teymur #projects .mycon #down .row .left .fifth span a {
+            opacity: 0; }
         #teymur #projects .mycon #down .row .left .three h1, #teymur #projects .mycon #down .row .left .four h1, #teymur #projects .mycon #down .row .left .fifth h1 {
           font-family: helvetica;
           font-size: 10px; }
