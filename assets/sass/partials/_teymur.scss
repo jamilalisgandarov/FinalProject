@@ -4,10 +4,7 @@
 #teymur{
 		 
 	background:#F4F4F4;
-	#header{
-		height: 58px;
-		background: black;
-	}
+	
 
 	//profile section
 	#profile{
@@ -107,7 +104,21 @@
 								border: 1px solid #e8e8e8;
 								line-height: 19px;
 								padding: 18px 20px;
-
+								&:hover{
+									opacity: 0.9;
+									span{
+										
+										a{
+											opacity: 1;
+										}
+									}
+								}
+									span{
+										padding-left: 240px;
+										a{
+											opacity: 0;
+										}
+									}
 									h1{
 										font-size: 21px;
 										margin-top: 1px;
@@ -150,9 +161,25 @@
 								border: 1px solid #e8e8e8;
 								line-height: 19px;
 								padding: 18px 20px;
+								&:hover{
+									opacity: 0.9;
+									span{
+									
+									a{
+										opacity:1;
+									}
+								}
+								}
+								span{
+									padding-left: 240px;
+									a{
+										opacity:0;
+									}
+								}
 								h1{
 									font-family: helvetica;
 									font-size: 10px;
+
 								}
 							}
 
@@ -189,7 +216,7 @@
 									margin-top: 170px;
 									&:hover{
 											border: 1px solid lightblue;
-									}
+										}
 									div{
 										margin-top: 50px;
 										.icon{
