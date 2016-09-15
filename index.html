@@ -18,65 +18,31 @@
     <!-- <link rel="stylesheet" type="text/css" href="assets/sass/partials/_footer.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 </head>
-<body>
-    <section id="header">
-        <div class="logo">
-            <h1>Behance</h1>
-        </div>
-        <div class="navigation">
-            <ul>
-                <li class="menuListItem"><a href="#" class="menuItem">Activity</a></li>
-                <li class="menuListItem"><a href="#" class="menuItem">Discover</a></li>
-                <li class="menuListItem"><a href="#" class="menuItem">Profile</a></li>
-                <li class="addWork text-center"><a href="#">
-                    <i class="fa fa-cloud-upload" aria-hidden="true"></i> Add Work
-                </a></li>
-            </ul>
-        </div>
-        <div class="rightBar">
-            <div class="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
-            <div class="profileLogo">
-                <img src="https://a3.behance.net/img/profile/no-image-115.jpg?cb=181952656" class="avatar">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                <div class="profileMenu">
-                <ul>
-                    <li><a href="#">My Profile</a></li>
-                    <li><a href="#">Statistics</a></li>
-                    <li><a href="#">Work Experience</a></li>
-                    <li><a href="#">Account Settings</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Log Out</a></li>
-                </ul>
-            </div>
-            </div>   
-        </div><!-- end .rightBar -->
-    </section>
 
+<body>
     <section id="settings">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <div class="col-md-4 col-xs-4 acc-info">
-                        <ul class="nav">
+                        <ul class="nav sideBar">
                             <li>
-                                <a href="#account" class="active">Account Information</a>
+                                <a data-id  ="#account" class="active">Account Information</a>
                             </li>
                             <li>
-                                <a href="#switch">Switch Adobe IDs</a>
+                                <a data-id="#switch">Switch Adobe IDs</a>
                             </li>
                             <li>
-                                <a href="#email">Email Notifications</a>
+                                <a data-id="#email">Email Notifications</a>
                             </li>
                             <li>
-                                <a href="#app">App Access</a>
+                                <a data-id="#app">App Access</a>
                             </li>
                             <li>
-                                <a href="#block">Blocked Users</a>
+                                <a data-id="#block">Blocked Users</a>
                             </li>
                             <li>
-                                <a href="#delete">Delete Account</a>
+                                <a data-id="#delete">Delete Account</a>
                             </li>
                         </ul>
                     </div>
@@ -84,15 +50,14 @@
                         <div id="account">
                             <h3>Account Information</h3>
                             <h4>
-                                Adobe ID
-                                <a href="">Edit this Adobe ID on Adobe.com<i class="fa fa-external-link" aria-hidden="true"></i></a> 
-
-                            </h4>
-                            <input name="email" type="text" id="email" disabled="disabled" value="emil.memmedli22@gmail.com">
+                Adobe ID
+                <a href="">Edit this Adobe ID on Adobe.com<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </h4>
+                            <input name="email" type="text" id="emailbutton" disabled="disabled" value="emil.memmedli22@gmail.com">
                             <h4 class="url">Behance URL
-                                <a href="">Edit</a>
-                            </h4>
-                            <input name="email" type="text" id="email" disabled="disabled" value="https://www.behance.net/emilmemmed28e2">
+                <a href="">Edit</a>
+                </h4>
+                            <input name="email" type="text" id="emailbutton" disabled="disabled" value="https://www.behance.net/emilmemmed28e2">
                             <br>
                             <div id="check">
                                 <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
@@ -103,89 +68,74 @@
                                 <p> Block mature content in the Behance gallery</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="switch">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="col-md-4 col-xs-4"></div>
-                        <div class="col-md-8 col-xs-8 swt">
-                            <h3>SWITCH ADOBE IDS</h3>
-                            <p>Your Adobe ID is what you'll use to login to your Behance account. If you have a different Adobe ID that you'd like to associate with your account, use the link below.</p>
-                            <a href="">Use a different Adobe ID</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="email">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="col-md-4 col-xs-4"></div>
-                        <div class="col-md-8 col-xs-8 ntf">
-                            <h3>EMAIL NOTIFICATIONS</h3>
-                            <div class="row">
-                                <div class="ntfc">
-                                    <h1>Notification Summary</h1>
-                                    <p>Receive an email summary of notifications instead of individual emails</p>
-                                    <form>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">On
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">Off
-                                        </label>
-                                    </form>
-                                </div>
-                                <div id="check">
-                                    <h3>Network Activity     <span>         Email me a summary of:</span></h3>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p> New Activity on projects and collections by my network</p>
-                                </div>
-                                <div id="check">
-                                    <h3>Actionable Email Notifications     <span>         Email me immediately when someone:</span></h3>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p>Invites me to co-own a project</p>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p>Invites me to co-own a collection</p>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p>Sends me a direct message</p>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p>Publishes a project</p>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p> Requests that I join their team </p>
-                                </div>
-                                <div id="check-b">
-                                    <h3>Newsletters <span>I would like to receive:</span></h3>
-                                    <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
-                                    <p> Announcements and special offers <span style="font-style:italic;    color: #6d6d6d;">(Really)</span></p>
-                                </div>
+                        <div id="switch">
+                            <div class="swt">
+                                <h3>SWITCH ADOBE IDS</h3>
+                                <p>Your Adobe ID is what you'll use to login to your Behance account. If you have a different Adobe ID that you'd like to associate with your account, use the link below.</p>
+                                <a href="">Use a different Adobe ID</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="app">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="col-md-4 col-xs-4"></div>
-                        <div class="col-md-8 col-xs-8 app">
-                            <h3>APP ACCESS</h3>
-                            <p style="font-style:italic;    color: #6d6d6d;">You currently don't allow any apps access to your account</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="block">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="col-md-4 col-xs-4"></div>
-                        <div class="col-md-8 col-xs-8 block">
-                            <h3>BLOCKED USERS</h3>
-                            <p style="font-style:italic;    color: #6d6d6d;">You haven't blocked any users</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="delete">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="col-md-4 col-xs-4"></div>
-                        <div class="col-md-8 col-xs-8 delete">
-                            <h3>DELETE ACCOUNT</h3>
-                            <h2 style="font-size:13px;"><b>Do you need to delete your Behance account?</b></h2>
-                            <p>Deleting your account will delete all of your content and remove all data associated with it.</p>
-                            <a href=""><b>I want to delete my account</b></a>
+                        <div id="email">
+                            <div class="ntf">
+                                <h3>EMAIL NOTIFICATIONS</h3>
+                                <div class="row">
+                                    <div class="ntfc">
+                                        <h1>Notification Summary</h1>
+                                        <p>Receive an email summary of notifications instead of individual emails</p>
+                                        <form>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">On
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio">Off
+                                            </label>
+                                        </form>
+                                    </div>
+                                    <div id="check">
+                                        <h3>Network Activity     <span>         Email me a summary of:</span></h3>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p> New Activity on projects and collections by my network</p>
+                                    </div>
+                                    <div id="check">
+                                        <h3>Actionable Email Notifications     <span>         Email me immediately when someone:</span></h3>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p>Invites me to co-own a project</p>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p>Invites me to co-own a collection</p>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p>Sends me a direct message</p>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p>Publishes a project</p>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p> Requests that I join their team </p>
+                                    </div>
+                                    <div id="check-b">
+                                        <h3>Newsletters <span>I would like to receive:</span></h3>
+                                        <input type="checkbox" name="" class="form-checkbox" value="1" checked="">
+                                        <p> Announcements and special offers <span style="font-style:italic;    color: #6d6d6d;">(Really)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="app">
+                                <div class="app">
+                                    <h3>APP ACCESS</h3>
+                                    <p style="font-style:italic;    color: #6d6d6d;">You currently don't allow any apps access to your account</p>
+                                </div>
+                            </div>
+                            <div id="block">
+                                <div class=" block">
+                                    <h3>BLOCKED USERS</h3>
+                                    <p style="font-style:italic;    color: #6d6d6d;">You haven't blocked any users</p>
+                                </div>
+                            </div>
+                            <div id="delete">
+                                <div class="delete">
+                                    <h3>DELETE ACCOUNT</h3>
+                                    <h2 style="font-size:13px;"><b>Do you need to delete your Behance account?</b></h2>
+                                    <p>Deleting your account will delete all of your content and remove all data associated with it.</p>
+                                    <a href=""><b>I want to delete my account</b></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,5 +147,16 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      $('.sideBar li').click(function(event) {
+        $('.sideBar li a').removeClass('active');
+        $(this).children('a').addClass('active');
+        var contentId=$(this).children('a').data('id');
+        var offset=$(''+contentId+'').offset().top;
+        // console.log(offset);
+        $("html, body").animate({ scrollTop: offset }, 1000);
+      });
+    </script>
 </body>
+
 </html>
