@@ -11,10 +11,12 @@ body
 		margin-bottom: 35px;
 		.editor
 		{
+			position: fixed;
+			z-index: 1;
 			background: #FFFFFF;
 			ul
 			{
-				padding-left: 30px;
+				padding-left: 25px;
 				margin: 0;
 				font-size: 1.285em;
 				display: inline-block;
@@ -53,37 +55,45 @@ body
 				}
 				@media screen and (max-width: 767px) {
 		   			padding-left: 0;
-		   			font-size: 0.9em;
-				}
-				@media screen and (max-width: 628px) {
+		   			text-align: center;
 		   			font-size: 0.7em;
 		   			width: 100%;
 		   			div{
 	   					display: none;
 	   				}
 	   				li{
+	   					&:first-child{
+	   						margin-top: 20px;
+	   					}
 	   					display: block;
-	   					margin: 15px auto 1px;
-	   				}	 
-				}		
+	   					margin: 1px auto 1px;
+	   				}	
+		   		
+				}
+				
 			}
 			.right
 			{	
 				margin-top: 10px;	
 				.right-inner{
-					padding-right: 40px;
+					padding-right: 22px;
 					margin-top: 15px;
 					.btn1{
-					background: #F4F4F4;
-				    color: #444444;
-					border: 1px solid #d0d0d0;
-				    border-radius: 3px;
-				    cursor: pointer;
-				    font-size: 1em;
-				    font-weight: bold;
-				    height: 31px;
-				    line-height: 29px;
-				    padding: 0 15px;
+						background: #F4F4F4;
+					    color: #444444;
+						border: 1px solid #d0d0d0;
+					    border-radius: 3px;
+					    cursor: pointer;
+					    font-size: 1em;
+					    font-weight: bold;
+					    height: 31px;
+					    line-height: 29px;
+					    padding: 0 15px;
+					    &:hover{
+					    	-ms-transform: translate(2px, 0px); 
+						    -webkit-transform: translate(2px, 0px); 
+						    transform: translate(2px, 0px);
+					    }
 					}
 					div{
 						margin: 0 10px;
@@ -103,19 +113,28 @@ body
 					    height: 31px;
 					    line-height: 29px;
 					    padding: 0 15px;
+					    &:hover{
+					    	-ms-transform: translate(2px, 0px); 
+						    -webkit-transform: translate(2px, 0px); 
+						    transform: translate(2px, 0px);
+					    }
 					}
 					.btn3{
 						background: #259E14;
 						border: 1px solid #1d8d0e;
 					    color: #fff;
 					    border-radius: 3px;
-					    //margin-top: 15px;
 					    cursor: pointer;
 					    font-size: 1em;
 					    font-weight: bold;
 					    height: 31px;
 					    line-height: 29px;
 					    padding: 0 15px;
+					    &:hover{
+					    	-ms-transform: translate(2px, 0px); 
+						    -webkit-transform: translate(2px, 0px); 
+						    transform: translate(2px, 0px);
+					    }
 					    i{
 					    	color: #ffffff;
 					    }
@@ -125,25 +144,24 @@ body
 					}
 					@media screen and (max-width: 767px) {
 			   			padding-right: 0;
-			   			font-size: 0.8em;
-					}
-					@media screen and (max-width: 628px) {
 			   			font-size: 0.7em;
+			   			width: 100%;
 			   			div{
 		   					display: none;
 		   				}
 		   				.btn1 , .btn2 , .btn3{
 		   					display: block;
-		   					width: 100px;
+		   					width: 100%;
 		   					margin-bottom: 7px;
 		   				}
-					}	
+					}
 				}
 			}		
 		}
 	}
 	#upload{
-		margin-left: 60px;
+		margin-top: 100px;
+		margin-left: 80px;
 		.media{
 			height: 241px;
 			background: #000000;
@@ -189,6 +207,7 @@ body
 			}
 		}
 		.project{
+			margin-right: 5px;
 			border: 1px solid #E4E4E4;
 			background: #FFFFFF;
 			border-radius: 3px;
@@ -219,8 +238,8 @@ body
 				}	
 			}
 			.fileupload{
-				height: 450px;
-				padding: 50px 40px;
+				height: 650px;
+				padding: 50px 30px;
 				div{
 					height: 100%;
 					&:hover{
@@ -236,7 +255,7 @@ body
     					text-align: center;
     					line-height: 100px;
     					cursor: pointer;
-    					padding-top: 130px;
+    					padding-top: 230px;
     					i{
     						font-size: 5em;
     						color: #cccccc;
@@ -251,7 +270,18 @@ body
 				}
 			}
 		}
+		@media screen and (min-width: 1000px) and (max-width: 1220px){
+			margin-left: 65px;
+		}
+		@media screen and (min-width: 900px) and (max-width: 1000px){
+			margin-left: 55px;
+		}
+		@media screen and (min-width: 768px) and (max-width: 900px){
+			margin-left: 45px;
+		}
 		@media screen and (max-width: 767px) {
+			margin-left: 45px;
+			margin-top: 310px;
 			.media{
 				margin-left: -20px;
 				margin-bottom: 20px;
